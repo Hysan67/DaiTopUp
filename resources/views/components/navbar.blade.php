@@ -1,20 +1,12 @@
-<nav class="bg-gray-800 dark:bg-gray-800/50">
-    <div class="mx-auto max-w-8xl px-4 sm:px-6 lg:px-8">
-       <div class="flex h-16 items-center justify-between">
-          <div class="shrink-0" >
+<nav>
+      <div class="h-16"></div>
+</nav>
+<nav class="fixed h-35 w-full top-0 bg-gray-800 dark:bg-gray-750 mb:16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+       <div class="flex h-16 items-center justify-between ">
+          <a class="shrink-0" href="/">
              <img src="{{ asset('images/Logo.png') }}" alt="Your Company" class="w-full size-10" />
-            </div>
-            <div class="flex items-center">
-             <div class="hidden md:block">
-                <div class="ml-10 flex items-baseline space-x-4 " >
-                   <!-- Current: "bg-gray-900 dark:bg-gray-950/50 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
-                   <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
-                   <x-nav-link href="/about" :active="request()->is('about')">About</x-nav-link>
-                   <x-nav-link href="/Test" :active="request()->is('t')">Test</x-nav-link>
-                   <x-nav-link href="/Tee" :active="request()->is('cek')">Tee</x-nav-link>
-                </div>
-             </div>
-          </div>
+          </a>
           <div class="hidden md:block">
           <div class="ml-4 flex items-center md:ml-6">
              <button type="button" class="relative rounded-full p-1 text-gray-400 hover:text-white focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500">
